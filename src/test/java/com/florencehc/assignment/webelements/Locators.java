@@ -29,6 +29,7 @@ public class Locators {
     public By ananasProductName(int index) {
         return By.xpath("(//li[@class = 'ais-Hits-item']//h3)[" + index + "]");
     }
+    public By ananasProductPageLoaded = By.xpath("//h2[text()='Opis proizvoda']");
 
     public By ananasProductPageName = By.xpath("//h1[@class]");
     //endregion Ananas

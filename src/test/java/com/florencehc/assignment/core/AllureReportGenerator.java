@@ -19,7 +19,7 @@ import static com.florencehc.assignment.helpers.Utilities.timeStampDayMonthYearH
 
 public class AllureReportGenerator {
     public static void generateAllureReport() {
-        String reportfolder = "testresults/allure-report" + timeStampDayMonthYearHourMinute();
+        String reportfolder = "testresults/allure-report_" + timeStampDayMonthYearHourMinute();
         AllureCommandline allureCommandline = new AllureCommandline(Paths.get("src/test/resources/report-resources/"), AllureCommandline.ALLURE_DEFAULT_VERSION);
         List<Path> paths = new ArrayList<>();
         paths.add(Paths.get("allure-results"));

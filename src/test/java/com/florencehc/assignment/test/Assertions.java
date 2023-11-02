@@ -62,6 +62,7 @@ public class Assertions {
                 softly.assertThat(webElement(locators.gigatronProductPageName).getText()).isEqualTo(expectedProductName);
                 break;
             case "ananas":
+                waitForElement(locators.ananasProductPageLoaded);
                 softly.assertThat(webElement(locators.ananasProductPageName).getText()).isEqualTo(expectedProductName);
                 break;
             case "tehnomedia":

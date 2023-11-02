@@ -54,10 +54,6 @@ public class Utilities {
     public static boolean pageIsLoadedFully() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         String readyState = js.executeScript("return document.readyState").toString();
-        if (readyState.equals("complete")) {
-            return true;
-        } else {
-            return false;
-        }
+        return readyState.equals("complete");
     }
 }
