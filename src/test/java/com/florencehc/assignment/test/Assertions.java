@@ -47,6 +47,7 @@ public class Assertions {
         }
         try {
             softly.assertAll();
+            log.info("Step passed - search results are displayed");
         } catch (AssertionError e) {
             log.error("Test failed:\n");
             throw new AssertionError(e);
@@ -74,6 +75,7 @@ public class Assertions {
         }
         try {
             softly.assertAll();
+            log.info("Step passed - correct product name is displayed");
         } catch (AssertionError e) {
             log.error("Test failed:\n");
             throw new AssertionError(e);

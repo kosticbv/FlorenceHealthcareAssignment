@@ -111,6 +111,7 @@ public class WebElementActions {
     public static void waitForElementShort(By locator) {
         waitForElementWithTimeout(locator, ConfigurationManager.SHORT_WAIT_TIMEOUT);
     }
+
     /**
      * Method to use fluent wait to wait for an element by provided locator, and a custom timeout duration
      *
